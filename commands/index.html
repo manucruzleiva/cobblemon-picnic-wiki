@@ -856,8 +856,44 @@
 <td>int</td>
 <td>Level offset for summoned trainers.</td>
 </tr>
+<tr>
+<td><code>protectshiny</code></td>
+<td>true/false</td>
+<td>Re-roll keeps <strong>shiny</strong> wild Pokémon instead of despawning them. <em>Default off.</em></td>
+</tr>
+<tr>
+<td><code>protectlegendary</code></td>
+<td>true/false</td>
+<td>Re-roll keeps <strong>legendary</strong> wild Pokémon. <em>Default off.</em></td>
+</tr>
+<tr>
+<td><code>protectmythical</code></td>
+<td>true/false</td>
+<td>Re-roll keeps <strong>mythical</strong> wild Pokémon. <em>Default off.</em></td>
+</tr>
+<tr>
+<td><code>protectultrabeast</code></td>
+<td>true/false</td>
+<td>Re-roll keeps <strong>Ultra Beast</strong> wild Pokémon. <em>Default off.</em></td>
+</tr>
+<tr>
+<td><code>disableseatedaggro</code></td>
+<td>true/false</td>
+<td>While someone is seated, hostile mobs <strong>flee</strong> the table. <em>Default on.</em></td>
+</tr>
+<tr>
+<td><code>seatedrepelradius</code></td>
+<td>0–128</td>
+<td>How far (blocks) the seated mob-repulsion reaches. <em>Default 30.</em></td>
+</tr>
 </tbody>
 </table>
+<div class="admonition tip">
+<p class="admonition-title">Peaceful picnic &amp; rare protection</p>
+<p>The four <code>protect…</code> toggles are <strong>opt-in</strong> (default off) and granular — turn on only the rarities you
+want the re-roll to spare. <code>disableseatedaggro</code> is <strong>on by default</strong>: sit at a table and hostile mobs
+within <code>seatedrepelradius</code> blocks lose their target and run away, like a creeper fleeing a cat.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Seat counts are <strong>not</strong> configurable — they're fixed per tier. On a dedicated server use these
