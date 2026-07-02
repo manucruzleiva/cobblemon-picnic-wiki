@@ -425,6 +425,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#cooldown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cooldown
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#party-tm-teaching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Party TM teaching
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#snack-bias" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -708,6 +730,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#cooldown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cooldown
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#party-tm-teaching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Party TM teaching
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#snack-bias" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -764,25 +808,37 @@ stops early once it has placed enough or a pass yields nothing.</p>
 <tbody>
 <tr>
 <td>Basic</td>
-<td style="text-align: center;">5</td>
+<td style="text-align: center;">7</td>
 </tr>
 <tr>
 <td>Camping</td>
-<td style="text-align: center;">1</td>
+<td style="text-align: center;">5</td>
 </tr>
 <tr>
 <td>Glamping</td>
-<td style="text-align: center;">free</td>
+<td style="text-align: center;">3</td>
 </tr>
 <tr>
 <td>Diving</td>
-<td style="text-align: center;">free</td>
+<td style="text-align: center;">3</td>
 </tr>
 </tbody>
 </table>
-<p>Bread can come from the table's <strong>fuel slot</strong> or from a nearby placed
+<p>The cost follows a <strong>7 / 5 / 3 / 3</strong> curve — cheaper as tiers improve. Bread can come from the table's
+<strong>fuel slot</strong> or from a nearby placed
 <strong><a href="../interactions-and-items/#picnic-baskets">Picnic Basket</a></strong> — the table will pull from baskets
-automatically. Out of bread? The table tells you and the re-roll is cancelled.</p>
+automatically. Out of bread? The table tells you and the re-roll is cancelled. Each per-tier cost is
+configurable via <code>fuelcost &lt;tier&gt;</code> (see <strong><a href="../configuration/">Configuration</a></strong>).</p>
+<h2 id="cooldown">Cooldown<a class="headerlink" href="#cooldown" title="Permanent link">&para;</a></h2>
+<p>To stop a table being spammed, each re-roll starts a <strong>cooldown</strong> (default <strong>5 seconds</strong>). It's
+enforced <strong>both per-table and per-player</strong> — whichever is still counting down blocks the re-roll, so
+you can't dodge it by hopping between tables. A blocked attempt shows a short <strong>actionbar countdown</strong>
+and costs no bread. Change it with <code>rerollcooldown &lt;seconds&gt;</code> (0 disables the wait).</p>
+<h2 id="party-tm-teaching">Party TM teaching<a class="headerlink" href="#party-tm-teaching" title="Permanent link">&para;</a></h2>
+<p>Every re-roll has a small chance (<strong>5%</strong> by default) that one of <strong>your party Pokémon teaches another
+party member</strong> one of its moves — a little picnic bonding. A Pokémon only ever learns a move it is
+<strong>actually able to learn</strong> (its normal learnset / TM compatibility), so it never gains an illegal move;
+if all four slots are full, one move is swapped out. Tune or disable it with <code>tmteachchance &lt;0..1&gt;</code>.</p>
 <h2 id="snack-bias">Snack bias<a class="headerlink" href="#snack-bias" title="Permanent link">&para;</a></h2>
 <p>If a <strong>seasoned <code>poke_snack</code></strong> is nearby when you re-roll, the spawn <strong>respects that snack's spawn
 influence</strong> (so you can bias toward what the snack attracts) and <strong>consumes one bite</strong> of the closest

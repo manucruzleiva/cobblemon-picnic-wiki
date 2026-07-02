@@ -774,9 +774,10 @@ needed). Statistics are stored separately in <code>config/cobblemon_picnic_stats
 <p>The fastest way to change a single value is the <a href="../commands/"><code>/cobblemonpicnicconfig</code></a> command —
 see the <a href="../commands/#settings-you-can-set">Commands</a> page for the full parameter list. Highlights:</p>
 <ul>
-<li><strong>Spawns:</strong> <code>spawncap &lt;tier&gt;</code>, <code>fuelcost &lt;tier&gt;</code></li>
+<li><strong>Spawns:</strong> <code>spawncap &lt;tier&gt;</code>, <code>fuelcost &lt;tier&gt;</code>, <code>rerollcooldown &lt;seconds&gt;</code></li>
 <li><strong>Shiny aura:</strong> <code>shinyaura</code>, <code>aurabase</code>, <code>auramax</code></li>
 <li><strong>Care:</strong> <code>washfriendship</code>, <code>slimeballfriendship</code>, <code>slimeballbreakchance</code></li>
+<li><strong>Party fun:</strong> <code>tmteachchance</code> (rare TM cross-teaching on re-roll)</li>
 <li><strong>Battle Seeker:</strong> <code>spawnappropriatelvltrainer</code>, <code>trainerlevelgap</code></li>
 <li><strong>Re-roll protection:</strong> <code>protectshiny</code>, <code>protectlegendary</code>, <code>protectmythical</code>, <code>protectultrabeast</code></li>
 <li><strong>Peaceful picnic:</strong> <code>disableseatedaggro</code> (on by default), <code>seatedrepelradius</code></li>
@@ -806,33 +807,35 @@ GUI.</p>
 <tr>
 <td>Basic</td>
 <td style="text-align: center;">5</td>
-<td style="text-align: center;">5</td>
+<td style="text-align: center;">7</td>
 <td style="text-align: center;">32</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
 <td>Camping</td>
 <td style="text-align: center;">8</td>
-<td style="text-align: center;">1</td>
+<td style="text-align: center;">5</td>
 <td style="text-align: center;">48</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
 <td>Glamping</td>
 <td style="text-align: center;">12</td>
-<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
 <td style="text-align: center;">64</td>
 <td style="text-align: center;">4</td>
 </tr>
 <tr>
 <td>Diving</td>
 <td style="text-align: center;">12</td>
-<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
 <td style="text-align: center;">64</td>
 <td style="text-align: center;">4</td>
 </tr>
 </tbody>
 </table>
+<p>Other notable defaults: <strong>re-roll cooldown</strong> <code>5</code> s (per-table + per-player), <strong>party TM cross-teach
+chance</strong> <code>0.05</code> (5%).</p>
 
 
 

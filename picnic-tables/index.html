@@ -760,7 +760,7 @@ to the tier's seat cap. Leftover side cells stay empty.</p>
 <td style="text-align: center;">5</td>
 <td style="text-align: center;">32</td>
 <td style="text-align: center;">2</td>
-<td style="text-align: center;">5 bread</td>
+<td style="text-align: center;">7 bread</td>
 <td>Entry tier</td>
 </tr>
 <tr>
@@ -768,7 +768,7 @@ to the tier's seat cap. Leftover side cells stay empty.</p>
 <td style="text-align: center;">8</td>
 <td style="text-align: center;">48</td>
 <td style="text-align: center;">3</td>
-<td style="text-align: center;">1 bread</td>
+<td style="text-align: center;">5 bread</td>
 <td>Cheaper fuel, bigger</td>
 </tr>
 <tr>
@@ -776,7 +776,7 @@ to the tier's seat cap. Leftover side cells stay empty.</p>
 <td style="text-align: center;">12</td>
 <td style="text-align: center;">64</td>
 <td style="text-align: center;">4</td>
-<td style="text-align: center;"><strong>free</strong></td>
+<td style="text-align: center;">3 bread</td>
 <td>Unlocks the <strong><a href="../battle-seeker/">Battle Seeker</a></strong> slot</td>
 </tr>
 <tr>
@@ -784,7 +784,7 @@ to the tier's seat cap. Leftover side cells stay empty.</p>
 <td style="text-align: center;">12</td>
 <td style="text-align: center;">64</td>
 <td style="text-align: center;">4</td>
-<td style="text-align: center;"><strong>free</strong></td>
+<td style="text-align: center;">3 bread</td>
 <td><strong>Placed underwater only</strong></td>
 </tr>
 </tbody>
@@ -794,8 +794,10 @@ to the tier's seat cap. Leftover side cells stay empty.</p>
 <li><strong>Radius</strong> — how far around the table wild Pokémon are despawned and re-rolled.</li>
 <li><strong>Seats</strong> — how many benches the footprint provides (seat counts are <strong>fixed per tier</strong>, not
   configurable).</li>
-<li><strong>Fuel</strong> — bread consumed per re-roll. Glamping and Diving are free; Basic/Camping consume bread
-  from the fuel slot or from a nearby <strong><a href="../interactions-and-items/#picnic-baskets">Picnic Basket</a></strong>.</li>
+<li><strong>Fuel</strong> — bread consumed per re-roll, on a <strong>7 / 5 / 3 / 3</strong> curve (cheaper as tiers improve).
+  Bread comes from the table's fuel slot or from a nearby
+  <strong><a href="../interactions-and-items/#picnic-baskets">Picnic Basket</a></strong>. The per-tier cost is configurable
+  (<code>fuelcost &lt;tier&gt;</code>).</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Upgrading</p>
